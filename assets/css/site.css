@@ -1,6 +1,7 @@
 :root{
-  --paper:#f6f0e6; --paper-2:#efe6d6; --ink:#1d1a16; --muted:#6b6257;
-  --saffron:#c0602e; --plum:#5a2a3a; --line:#d9cdb9;
+  --paper:#fff8f0; --paper-2:#ffe8d9; --ink:#1d1a16; --muted:#6b6257;
+  --saffron:#d1105a; --plum:#c2185b; --line:#f1d3c4;
+  --marigold:#ffb81c; --pink-deep:#a00c45; --night:#2a0f1f;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -198,3 +199,13 @@ section,footer{scroll-margin-top:64px}
   .portrait .tag b{display:inline;font-size:15px}
 }
 footer .email{display:inline-flex;align-items:center;min-height:44px;margin-top:14px;font-family:"Fraunces",serif;font-size:clamp(20px,2.4vw,28px);color:var(--saffron);text-underline-offset:6px;word-break:break-all}
+
+/* palette: Saree pink */
+nav{background:rgba(255,248,240,.92)}
+.marquee{background:var(--marigold);border-color:var(--marigold)}
+.marquee span{color:var(--plum)}
+.roles span{border-color:var(--saffron);color:var(--pink-deep)}
+.btn{background:var(--saffron)}
+.btn:hover{background:var(--ink)}
+footer{background:var(--night)}
+footer h2 em,footer .email{color:var(--marigold)}
