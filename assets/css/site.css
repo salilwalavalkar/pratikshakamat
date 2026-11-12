@@ -33,7 +33,7 @@ nav a:hover{color:var(--saffron)}
 .btn:hover{background:var(--saffron)}
 .link{font-size:14px;text-underline-offset:4px}
 .portrait{position:relative}
-.portrait img{aspect-ratio:4/5;object-fit:cover;object-position:52% 60%;width:100%;border-radius:220px 220px 6px 6px}
+.portrait img{aspect-ratio:4/5;object-fit:cover;object-position:50% 40%;width:100%;border-radius:220px 220px 6px 6px}
 .portrait .tag{position:absolute;left:-28px;bottom:36px;background:var(--paper);padding:14px 18px;border:1px solid var(--line);font-size:13px;max-width:210px;line-height:1.4}
 .portrait .tag b{display:block;font-family:"Fraunces",serif;font-weight:500;font-size:17px}
 
@@ -163,7 +163,7 @@ section,footer{scroll-margin-top:64px}
   .hero{padding:24px 0 48px}
   .hero .wrap{gap:28px}
   .portrait{order:-1}
-  .portrait img{aspect-ratio:4/3;border-radius:999px 999px 6px 6px/ 220px 220px 6px 6px;object-position:52% 62%}
+  .portrait img{aspect-ratio:4/3;border-radius:999px 999px 6px 6px/ 220px 220px 6px 6px;object-position:50% 38%}
   .portrait .tag{left:auto;right:12px;bottom:-18px;padding:10px 14px;max-width:190px;font-size:12px}
   .portrait .tag b{font-size:15px}
   .hero h1{font-size:clamp(40px,11vw,56px)}
@@ -192,3 +192,9 @@ section,footer{scroll-margin-top:64px}
   .spread img{width:78%}
   .spread img + img{width:58%;margin:-42% 0 0 42%}
 }
+@media (max-width:860px){
+  .portrait img{aspect-ratio:1/1;object-position:50% 45%}
+  .portrait .tag{position:static;max-width:none;margin-top:12px;display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;background:transparent;border:0;border-top:1px solid var(--line);padding:10px 0 0;font-size:13px}
+  .portrait .tag b{display:inline;font-size:15px}
+}
+footer .email{display:inline-flex;align-items:center;min-height:44px;margin-top:14px;font-family:"Fraunces",serif;font-size:clamp(20px,2.4vw,28px);color:var(--saffron);text-underline-offset:6px;word-break:break-all}

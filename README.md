@@ -44,7 +44,6 @@ When you're ready to switch the domain over from its current host:
 
 ## Still to do
 
-- [ ] A proper headshot for the hero (currently the Leinster House photo)
 - [ ] Direct RTÉ Player link for *Donal Skehan's Festival Kitchen: Diwali*
-- [ ] Contact email and a downloadable CV (`assets/cv.pdf`)
+- [ ] A downloadable CV (`assets/cv.pdf`)
 - [ ] Optional: stills from each show to sit alongside the credit screenshots
