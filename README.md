@@ -44,6 +44,5 @@ When you're ready to switch the domain over from its current host:
 
 ## Still to do
 
-- [ ] Direct RTÉ Player link for *Donal Skehan's Festival Kitchen: Diwali*
 - [ ] A downloadable CV (`assets/cv.pdf`)
 - [ ] Optional: stills from each show to sit alongside the credit screenshots
