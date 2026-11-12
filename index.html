@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f6f0e6">
 <title>Pratiksha Kamat · Researcher, Writer, Storyteller</title>
 <meta name="description" content="Pratiksha Kamat is a TV researcher, feature writer and storyteller based in Ireland. Credits include RTÉ's Festival Shorts and Donal Skehan's Festival Kitchen.">
 <meta property="og:title" content="Pratiksha Kamat · Researcher, Writer, Storyteller">
@@ -20,7 +21,8 @@
 
 <nav aria-label="Main"><div class="wrap">
   <a class="mark" href="#">Pratiksha Kamat</a>
-  <ul><li><a href="#screen">Screen</a></li><li><a href="#words">Words</a></li><li><a href="#air">On air</a></li><li><a href="#community">Community</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu"><span class="bars" aria-hidden="true"></span><span class="sr">Menu</span></button>
+  <ul id="menu"><li><a href="#screen">Screen</a></li><li><a href="#words">Words</a></li><li><a href="#air">On air</a></li><li><a href="#community">Community</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul>
 </div></nav>
 
 <header class="hero"><div class="wrap">
@@ -170,6 +172,20 @@
   </div>
   <small>© <span id="y">2026</span> Pratiksha Kamat</small>
 </div></footer>
-<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<a class="fab" href="#contact">Contact</a>
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+(function(){
+  var nav=document.querySelector('nav'), btn=nav.querySelector('.menu-toggle');
+  function set(open){nav.classList.toggle('open',open);btn.setAttribute('aria-expanded',open)}
+  btn.addEventListener('click',function(){set(!nav.classList.contains('open'))});
+  nav.querySelectorAll('#menu a').forEach(function(a){a.addEventListener('click',function(){set(false)})});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false)});
+  var fab=document.querySelector('.fab'), foot=document.getElementById('contact');
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){fab.classList.toggle('hide',es[0].isIntersecting)}).observe(foot);
+  }
+})();
+</script>
 </body>
 </html>
