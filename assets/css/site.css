@@ -255,3 +255,24 @@ footer h2 em,footer .email{color:var(--marigold)}
 .about a{color:var(--saffron);text-underline-offset:3px}
 @media (max-width:1000px){.reels{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:520px){.reels{grid-template-columns:1fr 1fr;gap:12px}.reel-body{padding:12px}.reel h3{font-size:16px}.reel-quote blockquote{font-size:15px;padding:16px}}
+
+/* about: richer */
+.about-lede{font-family:"Fraunces",serif;font-size:24px;line-height:1.35;font-weight:300}
+.about strong{color:var(--pink-deep);font-weight:500}
+.about-h{font-family:"Fraunces",serif;font-weight:500;font-size:22px;margin:36px 0 12px}
+.facts{list-style:none}
+.facts li{display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-top:1px solid var(--line);font-size:15px;line-height:1.5}
+.facts li span{font-size:22px;line-height:1.1;flex:0 0 28px;text-align:center}
+.facts b{font-weight:500}
+.find{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px}
+.find a{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:999px;background:#fff;border:1px solid var(--saffron);color:var(--pink-deep);text-decoration:none;font-size:14px;font-weight:500}
+.find a:hover{background:var(--saffron);color:#fff}
+@media (max-width:860px){.about-lede{font-size:20px}.skills{columns:1}}
+
+/* screen: 4 cards under the feature */
+.credits{grid-template-columns:repeat(4,1fr);gap:24px}
+.feature{grid-column:span 4}
+.feature .img img{object-position:50% 45%}
+@media (max-width:1100px){.credits{grid-template-columns:repeat(2,1fr)}.feature{grid-column:span 2}}
+@media (max-width:860px){.credits{grid-template-columns:1fr}.feature{grid-column:span 1}}
+@media (max-width:860px){.card .meta{flex-wrap:wrap;gap:0 16px}}
