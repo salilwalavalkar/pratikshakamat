@@ -324,3 +324,9 @@ footer h2 em,footer .email{color:var(--marigold)}
 .story:hover h3{color:var(--saffron)}
 @media (max-width:1100px){.stories{grid-template-columns:repeat(3,1fr)}}
 @media (max-width:860px){.words-head{grid-template-columns:1fr;gap:28px}.words-covers{height:300px}.stories{grid-template-columns:repeat(2,1fr);gap:28px 16px}.story h3{font-size:17px}}
+#air p a,.wide figcaption a,.list li span a{color:var(--saffron);text-underline-offset:3px}
+.events{grid-template-columns:repeat(4,1fr);gap:44px 28px}
+.events article:first-child{grid-column:span 2}
+.events article:first-child img{aspect-ratio:16/9}
+@media (max-width:1000px){.events{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.events{grid-template-columns:1fr}.events article:first-child{grid-column:span 1}.events article:first-child img{aspect-ratio:4/3}}
