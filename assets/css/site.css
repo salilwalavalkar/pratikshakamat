@@ -358,3 +358,4 @@ footer h2 em,footer .email{color:var(--marigold)}
 .events article:first-child img{aspect-ratio:4/3}
 @media (max-width:1000px){.events{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:600px){.events{grid-template-columns:1fr}}
+.hero p.lede a{color:var(--saffron);text-underline-offset:4px;text-decoration-thickness:1px}
