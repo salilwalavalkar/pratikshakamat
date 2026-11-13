@@ -209,3 +209,26 @@ nav{background:rgba(255,248,240,.92)}
 .btn:hover{background:var(--ink)}
 footer{background:var(--night)}
 footer h2 em,footer .email{color:var(--marigold)}
+
+/* photos from her original site */
+.events{grid-template-columns:repeat(3,1fr);gap:48px 36px;margin-top:8px}
+.events article{border-top:0;padding:0}
+.events article img{width:100%;aspect-ratio:4/3;object-fit:cover;margin-bottom:18px;border-radius:4px}
+.wide{margin-top:64px}
+.wide img{width:100%;border-radius:4px;box-shadow:0 30px 60px -30px rgba(0,0,0,.35)}
+.wide figcaption{margin-top:12px;font-size:14px;color:var(--muted)}
+.about-photo{margin-top:36px;width:100%;max-width:460px;aspect-ratio:1/1;object-fit:cover;object-position:55% 50%;border-radius:4px;transform:rotate(-1.5deg);box-shadow:0 30px 60px -25px rgba(0,0,0,.4)}
+
+/* right-to-work tag: highlighted */
+.portrait .tag{background:var(--marigold);border:0;color:var(--ink);font-weight:500;box-shadow:0 14px 30px -10px rgba(160,12,69,.45);transform:rotate(-2deg)}
+.portrait .tag b{font-size:19px}
+.portrait .tag::before{content:"✦";color:var(--pink-deep);margin-right:6px;font-size:14px}
+
+@media (max-width:1000px){.events{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:860px){
+  .portrait .tag{background:var(--marigold);border:0;padding:12px 16px;margin-top:16px;border-radius:6px;transform:none;box-shadow:0 10px 24px -10px rgba(160,12,69,.45)}
+  .portrait .tag::before{display:none}
+  .wide{margin-top:40px}
+  .about-photo{max-width:none;transform:none}
+}
+@media (max-width:600px){.events{grid-template-columns:1fr}}
