@@ -383,3 +383,10 @@ footer h2 em,footer .email{color:var(--marigold)}
 /* words header without covers */
 .words-head{grid-template-columns:1fr;max-width:760px}
 
+
+/* Navratri: idea → pitch → result */
+.steps{list-style:none;margin:6px 0 4px;counter-reset:none}
+.steps li{position:relative;padding:10px 0 10px 18px;border-left:2px solid var(--marigold);font-size:15px;color:var(--muted);line-height:1.5}
+.steps li::before{content:"";position:absolute;left:-7px;top:16px;width:12px;height:12px;border-radius:50%;background:var(--saffron);box-shadow:0 0 0 3px #fff}
+.steps li span{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--saffron);font-weight:500;margin-bottom:2px}
+.quote blockquote{max-width:26ch}
