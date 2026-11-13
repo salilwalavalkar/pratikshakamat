@@ -359,3 +359,18 @@ footer h2 em,footer .email{color:var(--marigold)}
 @media (max-width:1000px){.events{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:600px){.events{grid-template-columns:1fr}}
 .hero p.lede a{color:var(--saffron);text-underline-offset:4px;text-decoration-thickness:1px}
+
+/* Irish citizen tag: readable */
+.hero .portrait .tag{transform:none;max-width:300px;padding:18px 22px 16px;border-radius:10px;background:var(--marigold);color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;font-weight:400;line-height:1.4;box-shadow:0 16px 34px -12px rgba(160,12,69,.5)}
+.hero .portrait .tag::before,.hero .portrait .tag b::before{content:none}
+.hero .portrait .tag .tag-title{display:flex;align-items:center;gap:10px;font-family:"DM Sans",system-ui,sans-serif;font-weight:700;font-size:21px;letter-spacing:-.01em;margin-bottom:8px}
+.hero .portrait .tag .tag-flag{font-size:26px;line-height:1}
+.hero .portrait .tag .tag-line{font-size:15px;font-weight:500;margin-top:2px}
+@media (max-width:860px){
+  .hero .portrait .tag{display:block;max-width:none;padding:14px 18px;border-radius:8px}
+  .hero .portrait .tag .tag-title{font-size:19px;margin-bottom:6px}
+  .hero .portrait .tag .tag-line{font-size:15px}
+}
+.hero .portrait .tag{max-width:350px}
+.hero .portrait .tag .tag-line{white-space:nowrap}
+@media (max-width:860px){.hero .portrait .tag .tag-line{white-space:normal}}
