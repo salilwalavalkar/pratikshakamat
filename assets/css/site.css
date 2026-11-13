@@ -330,3 +330,7 @@ footer h2 em,footer .email{color:var(--marigold)}
 .events article:first-child img{aspect-ratio:16/9}
 @media (max-width:1000px){.events{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:600px){.events{grid-template-columns:1fr}.events article:first-child{grid-column:span 1}.events article:first-child img{aspect-ratio:4/3}}
+.reels{grid-template-columns:repeat(3,1fr)}
+@media (max-width:1000px){.reels{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:700px){.reels{grid-template-columns:1fr 1fr}}
+@media (max-width:700px){.reels{grid-template-columns:1fr;gap:16px}.reel img{aspect-ratio:16/10}.reel-body{padding:14px 16px 16px}.reel h3{font-size:18px}}
