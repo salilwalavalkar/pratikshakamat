@@ -241,3 +241,17 @@ footer h2 em,footer .email{color:var(--marigold)}
   .portrait .tag b{font-size:18px;margin:0}
 }
 .wide{max-width:920px;margin-left:auto;margin-right:auto}
+
+/* content I create */
+.reels{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.reel{display:flex;flex-direction:column;text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden;transition:transform .3s,box-shadow .3s}
+.reel:hover{transform:translateY(-4px);box-shadow:0 24px 40px -24px rgba(160,12,69,.45)}
+.reel img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 40%}
+.reel-body{padding:18px 18px 20px}
+.reel h3{font-family:"Fraunces",serif;font-weight:500;font-size:20px;line-height:1.2;margin:6px 0 10px}
+.reel .stat{font-size:13px;color:var(--muted)}
+.reel .stat b{color:var(--saffron);font-size:16px}
+.reel-quote blockquote{aspect-ratio:4/5;display:flex;align-items:center;padding:28px;background:var(--plum);color:var(--paper);font-family:"Fraunces",serif;font-style:italic;font-weight:300;font-size:22px;line-height:1.3}
+.about a{color:var(--saffron);text-underline-offset:3px}
+@media (max-width:1000px){.reels{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.reels{grid-template-columns:1fr 1fr;gap:12px}.reel-body{padding:12px}.reel h3{font-size:16px}.reel-quote blockquote{font-size:15px;padding:16px}}
