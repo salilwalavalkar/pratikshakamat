@@ -374,3 +374,7 @@ footer h2 em,footer .email{color:var(--marigold)}
 .hero .portrait .tag{max-width:350px}
 .hero .portrait .tag .tag-line{white-space:nowrap}
 @media (max-width:860px){.hero .portrait .tag .tag-line{white-space:normal}}
+.hero .portrait .tag{max-width:400px}
+.hero .portrait .tag{max-width:330px}
+.hero .portrait .tag .tag-flags{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 8px 18px}
+.hero .portrait .tag .tag-flags span{background:rgba(255,255,255,.55);border-radius:999px;padding:3px 10px;font-size:14px;font-weight:600;white-space:nowrap}
