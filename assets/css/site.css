@@ -379,3 +379,20 @@ footer h2 em,footer .email{color:var(--marigold)}
 .hero .portrait .tag .tag-flags{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 8px 18px}
 .hero .portrait .tag .tag-flags span{background:rgba(255,255,255,.55);border-radius:999px;padding:3px 10px;font-size:14px;font-weight:600;white-space:nowrap}
 .hero p.lede b{font-weight:600;color:var(--ink)}.hero p.lede a b{color:var(--saffron)}
+
+/* words header without covers */
+.words-head{grid-template-columns:1fr;max-width:760px}
+
+/* about: career timeline + education */
+.timeline{list-style:none;position:relative;margin-left:6px;border-left:2px solid var(--marigold);padding-left:22px}
+.timeline li{position:relative;padding:10px 0 14px}
+.timeline li::before{content:"";position:absolute;left:-29px;top:16px;width:12px;height:12px;border-radius:50%;background:var(--saffron);box-shadow:0 0 0 3px var(--paper-2)}
+.timeline .when{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--saffron);font-weight:500}
+.timeline b{display:block;font-family:"Fraunces",serif;font-weight:500;font-size:18px;line-height:1.25;margin:2px 0 4px}
+.timeline p{font-size:14px;color:var(--muted);line-height:1.5;margin:0}
+.edu{list-style:none}
+.edu li{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:10px 0;border-top:1px solid var(--line);font-size:15px}
+.edu li b{font-weight:500}
+.edu li span{color:var(--muted);font-size:14px}
+.edu a{color:var(--saffron)}
+.edu li{flex-direction:column;gap:2px}
