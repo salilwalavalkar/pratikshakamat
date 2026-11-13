@@ -232,3 +232,12 @@ footer h2 em,footer .email{color:var(--marigold)}
   .about-photo{max-width:none;transform:none}
 }
 @media (max-width:600px){.events{grid-template-columns:1fr}}
+.portrait .tag{max-width:270px;padding:18px 22px;font-size:14px;line-height:1.45;left:-40px;bottom:40px}
+.portrait .tag::before{content:none}
+.portrait .tag b{font-size:22px;margin-bottom:4px}
+.portrait .tag b::before{content:"✦ ";color:var(--pink-deep)}
+@media (max-width:860px){
+  .portrait .tag{max-width:none;padding:14px 18px;font-size:14px}
+  .portrait .tag b{font-size:18px;margin:0}
+}
+.wide{max-width:920px;margin-left:auto;margin-right:auto}
